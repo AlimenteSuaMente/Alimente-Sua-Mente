@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alimente Sua Mente - Neuro Nutrição</title>
+    <link rel="stylesheet" href="style.css">
+       <script src="script.js" defer></script>
+       <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "LrG9yplAqT8PClmC6",
+      });
+   })();
+</script>
+    <link rel="icon" href="logoback.png" type="image/png">
+
+</head>
+<body>
+    <header>
+        <nav class="container">
+           <a href="#" class="logo" onclick="showPage('home')">
+                <img src="logoback.png" alt="Alimente Sua Mente" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Início</a></li>
+                <li><a href="#" onclick="showPage('sono')" id="nav-sono">Sono</a></li>
+                <li><a href="#" onclick="showPage('telas')" id="nav-telas">Uso de Telas</a></li>
+                <li><a href="#" onclick="showPage('pesquisa')" id="nav-pesquisa">Pesquisa</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Página Inicial -->
+        <div id="home" class="page active">
+            <section class="hero">
+                <div class="badge">🧠 Ciência da Neuro Nutrição</div>
+                <h1>Alimente Sua Mente</h1>
+                <p>Descubra como a alimentação pode transformar seu desempenho cognitivo, memória e bem-estar mental através da ciência da neuro nutrição.</p>
+                <a href="#" class="btn btn-primary" onclick="document.getElementById('neuro-section').scrollIntoView({behavior: 'smooth'})">Explore o Conteúdo</a>
+                <a href="#" class="btn btn-secondary" onclick="showPage('pesquisa')">Faça a Pesquisa</a>
+            </section>
+
+            <section id="neuro-section">
+                <div class="card">
+                  <div class="divseparada">
+    <div>
+        <h2 class="neuroh2">O que é Neuro<br> Nutrição?</h2>
+    </div>
+    <div style="text-align: center;">
+        <img src="neuronutri.jpeg" alt="Neuro Nutrição" class="page-image">
+    </div>
+</div>
+                    <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                        A neuro nutrição é a área da ciência que estuda como a alimentação influencia diretamente o funcionamento do cérebro e do sistema nervoso. Mais do que apenas manter o corpo saudável, a maneira como comemos pode afetar a memória, o foco, a concentração, o humor e até a nossa capacidade de aprender.
+                    </p>
+                    <p style="margin-bottom: 1.5rem;">
+                        Alimentos ricos em vitaminas, minerais, gorduras boas e antioxidantes ajudam a proteger os neurônios, melhorar a comunicação entre as células cerebrais e garantir que o cérebro tenha energia suficiente para funcionar bem durante o dia.
+                    </p>
+                    <p>
+                        Já uma alimentação pobre em nutrientes ou rica em alimentos ultraprocessados pode causar cansaço mental, dificuldade de atenção, ansiedade e até queda no desempenho escolar ou profissional. Por isso, conhecer a neuro nutrição é um passo essencial para quem quer estudar melhor, ter mais clareza mental e cuidar da saúde da mente a longo prazo.
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2>Como a Neuro Nutrição Pode Ajudar</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+                    Conheça os principais desafios cognitivos que podem ser melhorados através da alimentação adequada
+                </p>
+
+                <div class="grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">👁️</div>
+                        <h3>Falta de Foco e Concentração</h3>
+                        <p>Muitos estudantes e profissionais têm dificuldade em manter o foco, especialmente durante períodos longos de estudo ou trabalho. A deficiência de nutrientes como ácidos graxos ômega-3, vitaminas do complexo B e magnésio pode impactar a função cognitiva. Alimentos como salmão, abacate, ovos e folhas verdes podem ajudar a melhorar o foco e a concentração.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon">❤️</div>
+                        <h3>Ansiedade e Estresse</h3>
+                        <p>A ansiedade pode afetar a capacidade de aprendizado e a saúde mental. Uma alimentação inadequada pode agravar o quadro. Alimentos ricos em triptofano, como nozes, sementes de abóbora e peixes gordurosos, ajudam na produção de serotonina, um neurotransmissor que contribui para a sensação de bem-estar e relaxamento.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon">🧠</div>
+                        <h3>Dificuldade de Memória</h3>
+                        <p>A falta de memória e a dificuldade em reter informações afetam muitos estudantes, especialmente em épocas de provas e estudos intensivos. Alimentos ricos em antioxidantes, como frutas vermelhas (morango, mirtilo), café e cacau, ajudam a proteger o cérebro do envelhecimento precoce e melhoram a memória e a aprendizagem.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon">⚡</div>
+                        <h3>Cansaço Físico</h3>
+                        <p>O cansaço físico está diretamente ligado à forma como nos alimentamos. Uma dieta desequilibrada pode levar à fadiga e falta de energia. Alimentos ricos em carboidratos complexos, proteínas e gorduras saudáveis fornecem energia sustentada. A hidratação adequada e vitaminas como ferro e B12 são cruciais para manter os níveis de energia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="card" style="background: linear-gradient(135deg, rgba(25, 118, 210, 0.05), rgba(56, 142, 60, 0.05));">
+                    <div class="card-icon">📚</div>
+                    <h2>Estudos Científicos e Referências</h2>
+                    <p style="text-align: center; font-size: 1.1rem; margin-bottom: 2rem;">
+                        Nosso conteúdo é embasado em pesquisas e estudos científicos rigorosos
+                    </p>
+                    
+                    <div style="background: rgba(255,255,255,0.8); padding: 1.5rem; border-radius: 10px; margin-bottom: 1.5rem; border-left: 4px solid #1976d2;">
+                        <h4 style="color: #1976d2; margin-bottom: 0.5rem;">📻 Podcast Científico</h4>
+                        <p><strong>Neuronutrição com Danielle Lodetti - Episódio 01.</strong> Disponível no YouTube (buscar por "Podcast Neuronutrição com Danielle Lodetti - Episódio 01").</p>
+                    </div>
+                    
+                    <div style="background: rgba(255,255,255,0.8); padding: 1.5rem; border-radius: 10px; margin-bottom: 2rem; border-left: 4px solid #388e3c;">
+                        <h4 style="color: #388e3c; margin-bottom: 0.5rem;">📄 Artigo Científico</h4>
+                        <p><strong>Neuro Nutrição na depressão e transtorno de ansiedade.</strong> Disponível em: <a href="https://rsdjournal.org/index.php/rsd/article/view/24454/21344" target="_blank" style="color: #1976d2; text-decoration: none;">RSD Journal</a>.</p>
+                    </div>
+
+                    <h4 style="text-align: center; margin-bottom: 1.5rem; color: #333;">💬 Citações Relevantes</h4>
+                    <blockquote style="border-left-color: #1976d2;">
+                        "De acordo com a Organização Mundial da Saúde (OMS), 18,6 milhões de brasileiros sofrem com algum distúrbio relacionado à ansiedade."
+                    </blockquote>
+                    <blockquote style="border-left-color: #388e3c;">
+                        "Alguns nutrientes com o potencial ansiolítico do L-triptofano, ômega 3, magnésio e das vitaminas do complexo B, apresentaram alta eficácia no combate a estes transtornos psicológicos (Andrade, et al., 2018)"
+                    </blockquote>
+                    <blockquote style="border-left-color: #9c27b0;">
+                        "Os precursores dos neurotransmissores são ácidos graxos ômega-3, vitamina B e aminoácidos, portanto, sua deficiência está ligada aos transtornos mentais, sendo de extrema importância o consumo de alimentos fontes dessas vitaminas."
+                    </blockquote>
+                </div>
+            </section>
+        </div>
+
+        <!-- Página Sono -->
+        <div id="sono" class="page">
+            <!-- Conteúdo da página Sono -->
+            <section class="hero">
+                <div class="badge">😴 Ciência do Sono</div>
+                <h1>A Importância do Sono para a Neuro Nutrição</h1>
+                <p>Entenda como o sono influencia diretamente o funcionamento do seu cérebro e como a nutrição pode otimizar sua qualidade de descanso.</p>
+            </section>
+
+            <div class="card">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="sono.jpeg" alt="Qualidade do Sono" class="page-image">
+                </div>
+                <div class="card-icon">🌙</div>
+                <h2 class="neuroh2">Fisiologia do Sono</h2>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    O sono é um estado de diminuição da consciência, redução dos movimentos musculares esqueléticos e lentificação do metabolismo. Ele desempenha uma função restauradora vital e um papel crucial na consolidação da memória.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    É um processo neuroquímico orquestrado, envolvendo centros cerebrais promotores do sono e do despertar. A propensão ao sono depende de dois fatores principais: a quantidade acumulada de privação de sono e a fase do relógio circadiano (que aumenta o sono à noite).
+                </p>
+                <div style="background: linear-gradient(135deg, rgba(25, 118, 210, 0.1), rgba(156, 39, 176, 0.1)); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #1976d2;">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem;">💡 Fato Importante:</p>
+                    <p>Neurotransmissores controlam o ciclo sono-vigília. Neurônios no tronco cerebral produzem serotonina e noradrenalina, que mantêm algumas partes do cérebro ativas enquanto estamos acordados. Os níveis de adenosina se elevam na corrente sanguínea enquanto estamos acordados, causando sonolência.</p>
+                </div>
+            </div>
+
+            <section>
+                <h2>Estágios do Sono</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+                    Compreenda as diferentes fases do sono e sua importância para a recuperação cerebral
+                </p>
+
+                <div class="grid">
+                    <div class="card" style="background: linear-gradient(135deg, rgba(25, 118, 210, 0.05), rgba(25, 118, 210, 0.1));">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="display: inline-block; background: linear-gradient(45deg, #1976d2, #1565c0); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold;">NREM</div>
+                        </div>
+                        <h3 style="text-align: center; color: #1976d2;">Estágios NREM (Não-REM)</h3>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #1976d2;">
+                            <h4 style="color: #333; margin-bottom: 0.5rem;">Estágio 1</h4>
+                            <p style="font-size: 0.9rem;">Superficial e fugaz, com ondas de baixa amplitude e frequência (ondas teta). Caracteriza-se por movimentos oculares lentos e atividade muscular mais lenta.</p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #1976d2;">
+                            <h4 style="color: #333; margin-bottom: 0.5rem;">Estágio 2</h4>
+                            <p style="font-size: 0.9rem;">Os movimentos oculares param, e as ondas cerebrais tornam-se mais lentas, com a presença de Complexos K e fusos de sono.</p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; margin-bottom: 1rem; border-left: 4px solid #1976d2;">
+                            <h4 style="color: #333; margin-bottom: 0.5rem;">Estágio 3</h4>
+                            <p style="font-size: 0.9rem;">Ondas extremamente lentas (0,3 a 2 Hz), conhecidas como ondas delta, intercaladas por ondas menores e mais rápidas.</p>
+                        </div>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; border-left: 4px solid #1976d2;">
+                            <h4 style="color: #333; margin-bottom: 0.5rem;">Estágio 4</h4>
+                            <p style="font-size: 0.9rem;">Predominantemente ondas delta. É o estágio mais difícil de acordar, sem movimento ocular ou atividade muscular.</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="background: linear-gradient(135deg, rgba(156, 39, 176, 0.05), rgba(233, 30, 99, 0.1));">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="display: inline-block; background: linear-gradient(45deg, #9c27b0, #e91e63); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-weight: bold;">REM</div>
+                        </div>
+                        <h3 style="text-align: center; color: #9c27b0;">Estágio REM</h3>
+                        <p style="text-align: center; color: #9c27b0; font-weight: 500; margin-bottom: 1.5rem;">Rapid Eye Movement</p>
+                        
+                        <div style="background: rgba(255,255,255,0.8); padding: 1rem; border-radius: 8px; margin-bottom: 1rem;">
+                            <h4 style="color: #333; margin-bottom: 1rem;">Características principais:</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="margin-bottom: 0.5rem;">• Respiração mais rápida, irregular e superficial</li>
+                                <li style="margin-bottom: 0.5rem;">• Frequência cardíaca e pressão arterial variáveis</li>
+                                <li style="margin-bottom: 0.5rem;">• Atonia muscular (exceto diafragma e músculos oculomotores)</li>
+                                <li style="margin-bottom: 0.5rem;">• Movimentos oculares rápidos</li>
+                                <li>• Sonhos bizarros e ilógicos</li>
+                            </ul>
+                        </div>
+                        
+                        <div style="background: linear-gradient(135deg, rgba(156, 39, 176, 0.1), rgba(233, 30, 99, 0.1)); padding: 1rem; border-radius: 8px; border-left: 4px solid #9c27b0;">
+                            <p style="font-size: 0.9rem;"><strong>Timing:</strong> O primeiro período de sono REM ocorre cerca de 70 a 90 minutos após o início do sono. À medida que a noite avança, os períodos de sono REM aumentam.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="card" style="background: linear-gradient(135deg, rgba(56, 142, 60, 0.05), rgba(25, 118, 210, 0.05));">
+                <div class="card-icon">🔄</div>
+                <h2 style="text-align: center;">Ciclo Completo do Sono</h2>
+                
+                <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); text-align: center;">
+                    <div style="background: rgba(255,255,255,0.8); padding: 2rem; border-radius: 10px;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: #1976d2; margin-bottom: 0.5rem;">90-110</div>
+                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">minutos</div>
+                        <div style="font-weight: 500;">Duração do ciclo completo</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.8); padding: 2rem; border-radius: 10px;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: #388e3c; margin-bottom: 0.5rem;">50%</div>
+                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">do tempo</div>
+                        <div style="font-weight: 500;">Estágio 2</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.8); padding: 2rem; border-radius: 10px;">
+                        <div style="font-size: 2.5rem; font-weight: bold; color: #9c27b0; margin-bottom: 0.5rem;">20%</div>
+                        <div style="font-size: 0.9rem; color: #666; margin-bottom: 0.5rem;">do tempo</div>
+                        <div style="font-weight: 500;">Sono REM</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">⚠️</div>
+                <h2 class = "neuroh2">Fatores que Influenciam o Sono</h2>
+                <p style="margin-bottom: 2rem;">
+                    O sono e a vigília são influenciados por diferentes estímulos de neurotransmissores no cérebro. Alimentos e medicamentos que alteram o equilíbrio desses estímulos são capazes de afetar nosso nível de alerta, sonolência ou a qualidade do nosso sono.
+                </p>
+
+                <div class="grid">
+                    <div style="background: rgba(244, 67, 54, 0.1); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #f44336;">
+                        <h4 style="color: #d32f2f; margin-bottom: 1rem;">❌ Prejudicam o Sono</h4>
+                        <ul style="color: #d32f2f;">
+                            <li>• Bebidas cafeinadas</li>
+                            <li>• Medicamentos anorexígenos</li>
+                            <li>• Descongestionantes nasais</li>
+                            <li>• Antidepressivos (suprimem REM)</li>
+                            <li>• Cigarro (mais de 25/dia)</li>
+                            <li>• Álcool (rouba REM e estágios 3-4)</li>
+                        </ul>
+                    </div>
+
+                    <div style="background: rgba(76, 175, 80, 0.1); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #4caf50;">
+                        <h4 style="color: #388e3c; margin-bottom: 1rem;">✅ Melhoram o Sono</h4>
+                        <ul style="color: #388e3c;">
+                            <li>• Alimentos ricos em triptofano</li>
+                            <li>• Magnésio e vitaminas do complexo B</li>
+                            <li>• Rotina regular de sono</li>
+                            <li>• Ambiente adequado (escuro, silencioso)</li>
+                            <li>• Exercícios regulares (não antes de dormir)</li>
+                            <li>• Evitar telas antes de dormir</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card" style="background: linear-gradient(135deg, rgba(63, 81, 181, 0.05), rgba(156, 39, 176, 0.05));">
+                <div class="card-icon">🧠</div>
+                <h2>Por que o Sono é Essencial?</h2>
+                
+                <div class="grid">
+                    <div>
+                        <h4 style="color: #3f51b5; margin-bottom: 1rem;">Funções Restauradoras</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">• Reparo e regeneração dos neurônios</li>
+                            <li style="margin-bottom: 0.5rem;">• Liberação do hormônio do crescimento</li>
+                            <li style="margin-bottom: 0.5rem;">• Consolidação da memória</li>
+                            <li>• Regulação emocional</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #f44336; margin-bottom: 1rem;">Consequências da Privação</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">• Incapacidade de concentração</li>
+                            <li style="margin-bottom: 0.5rem;">• Falhas de memória</li>
+                            <li style="margin-bottom: 0.5rem;">• Redução do desempenho físico</li>
+                            <li>• Alterações do humor</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; background: linear-gradient(135deg, rgba(25, 118, 210, 0.1), rgba(156, 39, 176, 0.1)); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #3f51b5;">
+                    <h4 style="color: #3f51b5; margin-bottom: 0.5rem;">💡 Insight Científico</h4>
+                    <p>A repetição padronizada de neurotransmissão (gerada durante o dia) durante o sono profundo pode ajudar a codificar memórias e melhorar o aprendizado. É durante o sono que o cérebro "organiza" as informações do dia e fortalece as conexões neurais importantes.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página Uso de Telas -->
+        <div id="telas" class="page">
+            <section class="hero">
+                <div class="badge">📱 Uso de Telas Excessivo</div>
+                <h1>O Impacto das Telas na Neuro Nutrição</h1>
+                <p>Descubra como o uso excessivo de dispositivos eletrônicos afeta o funcionamento do cérebro e como a alimentação pode ajudar a minimizar os efeitos negativos.</p>
+            </section>
+
+            <div class="card">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <img src="telas.jpeg" alt="Uso Excessivo de Telas" class="page-image">
+                    <div class="card-icon">⚠️</div>
+                <h2 class="neuroh2">O que é o Uso Excessivo de Telas?</h2>
+                </div>
+                <div>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    O uso excessivo de telas refere-se ao tempo prolongado gasto em dispositivos eletrônicos como smartphones, tablets, computadores e televisões, que pode causar impactos negativos na saúde física e mental, especialmente no funcionamento cerebral.
+                </p>
+                <p style="margin-bottom: 1.5rem;">
+                    A exposição constante à luz azul emitida pelas telas pode interferir na produção de melatonina, hormônio responsável pela regulação do sono. Além disso, o uso excessivo pode levar à fadiga mental, dificuldades de concentração e alterações no humor.
+                </p>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(255, 152, 0, 0.1)); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #f44336;">
+                    <p style="font-weight: 600; margin-bottom: 0.5rem;">⚠️ Alerta Importante:</p>
+                    <p>Estudos mostram que o uso excessivo de telas pode alterar a estrutura e função do cérebro, afetando áreas responsáveis pela atenção, controle de impulsos e processamento emocional.</p>
+                </div>
+            </div>
+
+            <section>
+                <h2>Impactos Neurológicos do Uso Excessivo de Telas</h2>
+                <p style="text-align: center; font-size: 1.1rem; color: #666; margin-bottom: 2rem;">
+                    Conheça os principais efeitos do tempo excessivo de tela no funcionamento cerebral
+                </p>
+
+                <div class="grid">
+                    <div class="problem-card">
+                        <div class="problem-icon">🧠</div>
+                        <h3>Alterações na Estrutura Cerebral</h3>
+                        <p>O uso excessivo de telas pode causar mudanças na massa cinzenta do cérebro, especialmente em áreas relacionadas ao controle executivo, planejamento e organização. Estudos mostram redução na espessura cortical em regiões responsáveis pelo processamento cognitivo.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon">👁️</div>
+                        <h3>Fadiga Visual e Cognitiva</h3>
+                        <p>A exposição prolongada às telas causa fadiga visual digital, caracterizada por olhos secos, visão turva e dores de cabeça. Isso também leva à fadiga cognitiva, reduzindo a capacidade de concentração e processamento de informações.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon">😴</div>
+                        <h3>Distúrbios do Sono</h3>
+                        <p>A luz azul das telas suprime a produção de melatonina, hormônio do sono. Isso resulta em dificuldades para adormecer, sono fragmentado e menor qualidade do descanso, afetando a consolidação da memória e recuperação cerebral.</p>
+                    </div>
+
+                    <div class="problem-card">
+                        <div class="problem-icon">⚡</div>
+                        <h3>Déficit de Atenção</h3>
+                        <p>O uso excessivo de telas pode levar a sintomas similares ao TDAH, incluindo dificuldade de manter atenção, hiperatividade e impulsividade. A constante estimulação digital treina o cérebro para buscar gratificação imediata.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="card" style="background: linear-gradient(135deg, rgba(76, 175, 80, 0.05), rgba(25, 118, 210, 0.05));">
+                <div class="card-icon">🥗</div>
+                <h2>Como a Neuro Nutrição Pode Ajudar</h2>
+                <p style="margin-bottom: 2rem;">
+                    A alimentação adequada pode ajudar a minimizar os efeitos negativos do uso excessivo de telas e promover a saúde cerebral.
+                </p>
+
+                <div class="grid">
+                    <div style="background: rgba(255,255,255,0.8); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #4caf50;">
+                        <h4 style="color: #388e3c; margin-bottom: 1rem;">🫐 Antioxidantes</h4>
+                        <p style="font-size: 0.9rem;">Frutas vermelhas, cacau e chá verde ajudam a combater o estresse oxidativo causado pela exposição excessiva às telas.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.8); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #2196f3;">
+                        <h4 style="color: #1976d2; margin-bottom: 1rem;">🐟 Ômega-3</h4>
+                        <p style="font-size: 0.9rem;">Peixes gordurosos, nozes e sementes de linhaça ajudam a manter a saúde das membranas celulares e reduzir inflamação cerebral.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.8); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #ff9800;">
+                        <h4 style="color: #f57c00; margin-bottom: 1rem;">🥕 Luteína e Zeaxantina</h4>
+                        <p style="font-size: 0.9rem;">Vegetais verde-escuros como espinafre e couve protegem os olhos da luz azul e melhoram a função visual.</p>
+                    </div>
+
+                    <div style="background: rgba(255,255,255,0.8); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #9c27b0;">
+                        <h4 style="color: #7b1fa2; margin-bottom: 1rem;">🥜 Magnésio</h4>
+                        <p style="font-size: 0.9rem;">Nozes, sementes e folhas verdes ajudam a relaxar o sistema nervoso e melhorar a qualidade do sono.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-icon">💡</div>
+                <h2>Estratégias de Prevenção</h2>
+                
+                <div class="grid">
+                    <div>
+                        <h4 style="color: #1976d2; margin-bottom: 1rem;">📱 Higiene Digital</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">• Regra 20-20-20: a cada 20 minutos, olhe para algo a 20 pés (6m) por 20 segundos</li>
+                            <li style="margin-bottom: 0.5rem;">• Evite telas 1-2 horas antes de dormir</li>
+                            <li style="margin-bottom: 0.5rem;">• Use filtros de luz azul ou modo noturno</li>
+                            <li>• Faça pausas regulares durante o uso</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 style="color: #388e3c; margin-bottom: 1rem;">🍎 Alimentação Protetiva</h4>
+                        <ul style="list-style: none; padding: 0;">
+                            <li style="margin-bottom: 0.5rem;">• Consuma alimentos ricos em antioxidantes diariamente</li>
+                            <li style="margin-bottom: 0.5rem;">• Inclua fontes de ômega-3 na dieta</li>
+                            <li style="margin-bottom: 0.5rem;">• Mantenha-se hidratado</li>
+                            <li>• Evite alimentos ultraprocessados</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; background: linear-gradient(135deg, rgba(25, 118, 210, 0.1), rgba(76, 175, 80, 0.1)); padding: 1.5rem; border-radius: 10px; border-left: 4px solid #1976d2;">
+                    <h4 style="color: #1976d2; margin-bottom: 0.5rem;">🎯 Dica Prática</h4>
+                    <p>Combine uma alimentação rica em nutrientes neuroprotetores com hábitos saudáveis de uso de telas para otimizar a saúde cerebral e o desempenho cognitivo.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Página Pesquisa -->
+        <div id="pesquisa" class="page">
+            <section class="hero">
+                <div class="badge">📊 Pesquisa Científica</div>
+                <h1>Pesquisa sobre Neuro Nutrição</h1>
+                <p>Ajude-nos a entender melhor a relação entre alimentação e desempenho cognitivo respondendo às perguntas abaixo. Sua participação é fundamental para nossa pesquisa.</p>
+            </section>
+
+            <div class="card">
+                <div style="text-align: center; margin-bottom: 2rem;">
+                </div>
+                <h2>Formulário de Pesquisa</h2>
+                <p style="text-align: center; margin-bottom: 2rem;">
+                    Responda às perguntas abaixo para contribuir com nossa pesquisa sobre neuro nutrição
+                </p>
+                
+              <form id="pesquisaForm" onsubmit="sendEmail(event)">
+
+                    <div class="form-section">
+                        <h3 style="color: #1976d2; margin-bottom: 1.5rem;">🎓 Sintomas de Estudantes</h3>
+                        
+                        <div class="question">
+                            <p>Você costuma sentir dificuldade de concentração nas aulas?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="concentracao" value="frequentemente" id="conc1">
+                                    <label for="conc1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="concentracao" value="as_vezes" id="conc2">
+                                    <label for="conc2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="concentracao" value="nunca" id="conc3">
+                                    <label for="conc3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Você se sente mentalmente cansado, mesmo dormindo bem?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="cansaco" value="frequentemente" id="cans1">
+                                    <label for="cans1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="cansaco" value="as_vezes" id="cans2">
+                                    <label for="cans2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="cansaco" value="nunca" id="cans3">
+                                    <label for="cans3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Você sente sono ou falta de energia durante a rotina acadêmica?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="sono_energia" value="frequentemente" id="sono1">
+                                    <label for="sono1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="sono_energia" value="as_vezes" id="sono2">
+                                    <label for="sono2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="sono_energia" value="nunca" id="sono3">
+                                    <label for="sono3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 style="color: #388e3c; margin-bottom: 1.5rem;">🍎 Hábitos Alimentares</h3>
+                        
+                        <div class="question">
+                            <p>Você costuma pular refeições durante o dia?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="pular_refeicoes" value="frequentemente" id="pular1">
+                                    <label for="pular1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="pular_refeicoes" value="as_vezes" id="pular2">
+                                    <label for="pular2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="pular_refeicoes" value="nunca" id="pular3">
+                                    <label for="pular3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Com que frequência você consome alimentos ultraprocessados (salgadinhos, bolacha, refrigerante, etc)?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="ultraprocessados" value="frequentemente" id="ultra1">
+                                    <label for="ultra1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="ultraprocessados" value="as_vezes" id="ultra2">
+                                    <label for="ultra2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="ultraprocessados" value="nunca" id="ultra3">
+                                    <label for="ultra3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Você sente que sua alimentação é equilibrada (com frutas, verduras, fibras, proteínas etc)?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="equilibrada" value="frequentemente" id="equil1">
+                                    <label for="equil1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="equilibrada" value="as_vezes" id="equil2">
+                                    <label for="equil2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="equilibrada" value="nunca" id="equil3">
+                                    <label for="equil3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3 style="color: #9c27b0; margin-bottom: 1.5rem;">🧠 Conhecimento sobre Neuro Nutrição</h3>
+                        
+                        <div class="question">
+                            <p>Você já ouviu falar em neuro nutrição?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="conhece_neuro" value="frequentemente" id="conhece1">
+                                    <label for="conhece1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="conhece_neuro" value="as_vezes" id="conhece2">
+                                    <label for="conhece2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="conhece_neuro" value="nunca" id="conhece3">
+                                    <label for="conhece3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Você sabia que a deficiência de certos nutrientes pode afetar memória, foco e humor?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="deficiencia" value="frequentemente" id="def1">
+                                    <label for="def1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="deficiencia" value="as_vezes" id="def2">
+                                    <label for="def2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="deficiencia" value="nunca" id="def3">
+                                    <label for="def3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p>Você gostaria de aprender mais sobre como a alimentação influencia seu cérebro e desempenho nos estudos?</p>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" name="interesse" value="frequentemente" id="int1">
+                                    <label for="int1">Frequentemente</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="interesse" value="as_vezes" id="int2">
+                                    <label for="int2">Às vezes</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" name="interesse" value="nunca" id="int3">
+                                    <label for="int3">Nunca</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary">
+                            Enviar Respostas ✓
+                        </button>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">✓</div>
+                    <h3>Obrigado pela sua participação!</h3>
+                    <p>Suas respostas foram registradas e nos ajudarão a entender melhor a relação entre alimentação e desempenho cognitivo. Continue explorando nosso site para aprender mais sobre neuro nutrição!</p>
+                    <button onclick="resetForm()" class="btn" style="background: rgba(255,255,255,0.2); color: white; margin-top: 1rem;">
+                        Responder Novamente
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h3>Alimente Sua Mente</h3>
+            <p>Transformando vidas através da neuro nutrição baseada em ciência</p>
+            <p>Descubra como a alimentação pode potencializar seu desempenho cognitivo.</p>
+            <div class="footer-links">
+                <a href="#" onclick="showPage('home')">Início</a>
+                <a href="#" onclick="showPage('sono')">Sono</a>
+                <a href="#" onclick="showPage('telas')">Uso de Telas</a>
+                <a href="#" onclick="showPage('pesquisa')">Pesquisa</a>
+            </div>
+            <div style="border-top: 1px solid rgba(255,255,255,0.2); padding-top: 1rem; margin-top: 2rem;">
+                <p style="font-size: 0.9rem; opacity: 0.8;">© 2024 Alimente Sua Mente. Todos os direitos reservados.</p>
+                <p style="font-size: 0.8rem; opacity: 0.6; margin-top: 0.5rem;">Desenvolvido com foco em neuro nutrição e bem-estar cognitivo</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
